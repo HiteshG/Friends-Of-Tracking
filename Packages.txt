@@ -3,3 +3,4 @@ Numpy
 Pandas
 FCPython
 Kloppy
+https://pypi.org/project/highlight-text/
