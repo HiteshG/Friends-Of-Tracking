@@ -120,6 +120,14 @@ passshot_df['Shots'] = pd.to_numeric(passshot_df['Shots'])
 passshot_df['Passes'] = pd.to_numeric(passshot_df['Passes']) 
 passshot_df['Goals'] = pd.to_numeric(passshot_df['Goals']) 
 
+passshot_df.to_csv("passShot.csv", index = False)
+
+danger_passes_by.to_csv("danger_pass.csv", index = False)
+
+import pickle
+a_file = open("danger_passes.pkl", "wb")
+pickle.dump(danger_passes_by, a_file)
+a_file.close()
 
 from sklearn.linear_model import LinearRegression, linear_model
 
